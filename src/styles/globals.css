@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0px;
+	margin: 0px;
+	outline: none;
+}
+
+body {
+  @apply flex-1;
+}
+
+.arrowTop::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  right: 156px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
