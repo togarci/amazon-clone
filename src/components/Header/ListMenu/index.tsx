@@ -27,12 +27,12 @@ const ListMenu = () => {
                         Contas e Listas
                     </span>
                     <div className="rotate-180"><Triangle size={8} weight="fill" color="#FFF"/></div>
-                </div> 
+                </div>
 
                 <div className="hidden rounded mt-2 px-6 py-4 group-hover:block absolute z-10 w-[560px] right-[-150px] bg-white arrowTop">
                     <div className="flex-col w-full">
                         <div className="flex justify-center">
-                            <button 
+                            <button
                                 className="w-[200px] bg-[linear-gradient(180deg,#f8e3ad,#EEBA37)] rounded-[3px] text-sm border border-gray-400 py-1 px-5"
                             >
                                 Faça seu login
@@ -48,8 +48,8 @@ const ListMenu = () => {
                         <div className="flex-col w-1/2">
                             <h1 className="font-bold mb-1">Suas Listas</h1>
                             <ul>
-                                <li 
-                                    className="text-[13px] cursor-pointer hover:text-orange-400"
+                                <li
+                                    className="text-[13px] cursor-pointer hover:text-orange-400 hover:underline"
                                 >
                                     Criar uma Lista de desejos
                                 </li>
@@ -59,14 +59,15 @@ const ListMenu = () => {
                             <h1 className="font-bold mb-1">Sua Conta</h1>
                             <ul>
                                 {
-                                    listMenuConta.map((elem: string) => (
-                                        <li 
-                                            className="text-sm cursor-pointer my-1 text-[13px] hover:text-orange-400"
+                                    listMenuConta.map((elem: string, index: number) => (
+                                        <li
+                                            key={`${index}-item-conta-menu`}
+                                            className="text-sm cursor-pointer my-1 text-[13px] hover:text-orange-400 hover:underline"
                                         >
                                             {elem}
                                         </li>
                                     ))
-                                    
+
                                 }
                             </ul>
                         </div>

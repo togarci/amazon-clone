@@ -29,8 +29,8 @@ const NavMenu = () => {
             </button>
             <ul className="flex flex-1 items-center justify-between">
                 {
-                    listMenu?.map((elem: string) => (
-                        <li className="text-sm text-white border border-gray-700 px-2 py-1 hover:border-white cursor-pointer">
+                    listMenu?.map((elem: string, index: number) => (
+                        <li key={`${index}-nav-item`} className="text-sm text-white border border-gray-700 px-2 py-1 hover:border-white cursor-pointer">
                             {elem}
                         </li>
                     ))

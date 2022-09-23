@@ -2,7 +2,8 @@ export namespace AsideMenuTypes {
 
     export interface Menu {
         name: string,
-        subMenu?: Array<string>
+        subMenu?: Array<itemMenu>
+        listMenu?: Array<Menu>
     }
 
 
