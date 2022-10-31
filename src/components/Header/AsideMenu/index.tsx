@@ -451,8 +451,6 @@ const AsideMenu = ({ showMenu, handleShowMenu }: AsideMenuTypes.propsModal) => {
     }
 
     const openSubMenu = (itemMenu: AsideMenuTypes.Menu) => {
-        console.log('teste');
-        
         if (itemMenu.subMenu) {
             setSecondaryListMenu(itemMenu.subMenu);
             transitionMenu(-365)
